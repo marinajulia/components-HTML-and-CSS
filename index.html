@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="Imagens/icone.ico" type="image/x-icon">
     <title>Document</title>
-    <style>mark{
-        background-color: rgb(255, 238, 0);
-    }</style>
+    <style>
+        mark {
+            background-color: rgb(255, 238, 0);
+        }
+    </style>
     <p><del>linha:</del> &lt;hr&gt;</p>
     <hr>
     <p><ins>Quebra de linha com</ins><mark>&lt;br&gt;</mark></p>
     <hr>
-    <p>Símbolos especiais:  &reg; &copy; &trade; &euro; &pound;</p>
+    <p>Símbolos especiais: &reg; &copy; &trade; &euro; &pound;</p>
     <hr>
     <p><em><strong>Emoji's:</strong></em> &#x1F596;</p>
     <hr>
@@ -61,11 +64,30 @@
     </picture>
     <hr>
     <p>Reproduzindo audio:</p>
-    <audio preload="metadata" src="Sons/A Long Cold - Riot.mp3" controls autoplay loop></audio>
+    <audio preload="metadata" src="Arquivos/A Long Cold - Riot.mp3" controls autoplay loop></audio>
     <!-- quando for de outro tipo, é necessário fazer da seguinte forma:
     <source src="Sons/A Long Cold - Riot.mp3" type="audio/mpeg"> -->
+    <hr>
+    <p>Inserindo vídeo localmente:</p>
+    <!-- Esse é o jeito padrão, mas existem navegadores que não suportam alguns tipos de vídeos
+    por isso, é melhor colocar todos os tipos de video(demonstração com o mesmo vídeo por preguiça) -->
+    <!-- <video src="Arquivos/video.mp4" width="500" height="300" controls></video> -->
+    <!-- poster para a thumb do vídeo: -->
+    <video width="500" height="300" poster="Imagens/imagem.png" controls>
+        <source src="Arquivos/video.mp4" type="video/mp4">
+        <!-- outro tipo aqui: -->
+        <source src="Arquivos/video.mp4" type="video/mp4">
+        <p>Seu navegador não possui compatibilidade para esse vídeo</p>
+    </video>
+    <p>Inserindo vídeos do youtube:</p>
+    <!-- usando a ferramenta "incorporar" do youtube na função compartilhar -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
 </head>
+
 <body>
-    
+
 </body>
+
 </html>
