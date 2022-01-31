@@ -4,14 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Imagens/icone.ico" type="image/x-icon">
     <title>Document</title>
-    <p>linha: &lt;hr&gt;</p>
+    <style>mark{
+        background-color: rgb(255, 238, 0);
+    }</style>
+    <p><del>linha:</del> &lt;hr&gt;</p>
     <hr>
-    <p>Quebra de linha com &lt;br&gt;</p>
+    <p><ins>Quebra de linha com</ins><mark>&lt;br&gt;</mark></p>
     <hr>
-    <p>Simbulos especiais:  &reg; &copy; &trade; &euro; &pound;</p>
+    <p>Símbolos especiais:  &reg; &copy; &trade; &euro; &pound;</p>
     <hr>
-    <p>Emoji's: &#x1F596;</p>
+    <p><em><strong>Emoji's:</strong></em> &#x1F596;</p>
+    <hr>
+    <img src="Imagens/imagem.png" alt="imagem">
+    <hr>
+    <!-- target para abrir uma nova aba externa-->
+    <p>Link externo:</p>
+    <p><a href="https://www.google.com/" target="_blank" rel="external">Link google</a></p>
+    <p>Link interno:</p>
+    <p><a href="pagina2.html" rel="next">Página2</a></p>
+    <hr>
+    <!-- no tipo, buscar por media types no google para fazer download de outros tipos -->
+    <p><a href="Arquivos/pdf.pdf" download="pdf.pdf" type="application/pdf">Baixar PDF</a></p>
+    <p><a href="Arquivos/zip.zip" download="zip.zip" type="application/zip">Baixar ZIP</a></p>
+    <hr>
+    <p>H<sub>2</sub>OH</p>
+    <p>2<sup>10</sup></p>
+    <hr>
+    <p>Código: <code>document.getElementById</code></p>
+    <pre><code>
+        var i = 1;
+        if(i != 1) {
+            return false;
+        }
+    </code></pre>
+    <hr>
+    <p>Lista ordenada:</p>
+    <ol>
+        <li>a
+        <li>b
+        <li>c
+    </ol>
+    <p>Lista não ordenada:</p>
+    <ul>
+        <li>a
+        <li>b
+        <li>c
+    </ul>
 </head>
 <body>
     
