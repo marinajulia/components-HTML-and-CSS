@@ -22,3 +22,22 @@ body{
     font-family: 'adhelia';
     font-weight: normal;
 }
+/* text-indent:30px indenta */
+div.quadrado{
+    display: inline-block;
+    border:2px solid black;
+    border-radius: 10px;
+    background-color: rgb(245, 177, 236);
+    width: 300px;
+    height: 300px;
+}
+div#q1{
+
+}
+div#q2{
+  background-image: linear-gradient(to bottom, yellow, orange);  
+
+}
+div#q3{
+    background-image: url('Imagens/imagens-cap19/pattern003.png');
+}
