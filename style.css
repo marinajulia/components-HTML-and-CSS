@@ -31,13 +31,30 @@ div.quadrado{
     width: 300px;
     height: 300px;
 }
-div#q1{
-
-}
 div#q2{
   background-image: linear-gradient(to bottom, yellow, orange);  
 
 }
 div#q3{
     background-image: url('Imagens/imagens-cap19/pattern003.png');
+}
+
+div.retangulo{
+    background-image: url('Imagens/imagens-cap19/wallpaper002.jpg');
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin:10px;
+}
+div#r1{
+    background-position: left top;
+}
+div#r2{
+    background-position: left center;
+}
+div#r3{
+    background-position: right bottom;
+}
+div#r14{
+    background-position: center center;
 }
