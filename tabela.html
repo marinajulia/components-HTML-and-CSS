@@ -35,6 +35,12 @@
             background-color: gray;
             color: white;
         }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightslategray;
+        }
     </style>
 </head>
 
@@ -68,6 +74,7 @@
     </table>
 
     <!-- Hierarquia tabelas grandes
+        CAPTION
         THEAD -> tr, td, th
         TBODY -> tr, td, th
         TFOOT -> tr, td, th
@@ -76,9 +83,10 @@
     <br />
     <h1>Tabela genérica composta:</h1>
     <table>
+        <caption>População das unidades federativas</caption>
         <thead>
-            <th>Estado</th>
-            <th>População</th>
+            <th scope="col">Estado</th>
+            <th scope="col">População</th>
         </thead>
 
         <tbody>
@@ -98,7 +106,7 @@
 
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td>434.324.321</td>
             </tr>
         </tfoot>
