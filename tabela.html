@@ -62,12 +62,17 @@
     TABLE HEADER = cabeçalho da tabela
     TABLE DATA = dado da tabela -->
     <table id="simples">
+        <thead>
+            <th scope="col">Nome1</th>
+            <th scope="col" >Nome2</th>
+            <th scope="col">Nome3</th>
+        </thead>
         <tr id="simples">
             <td id="simples">A1</td>
-            <td id="simples" colspan="2">B1</td>
+            <td scope="colgroup" id="simples" colspan="2">B1</td>
         </tr>
         <tr id="simples">
-            <td id="simples" rowspan="3">A2</td>
+            <td id="simples" rowspan="3" scope="rowgroup">A2</td>
             <td id="simples">B2</td>
             <td id="simples">C2</td>
         </tr>
@@ -79,6 +84,10 @@
             <td id="simples">B4</td>
             <td id="simples">C4</td>
         </tr>
+        <tfoot>
+            <th colspan="2" scope="row">Total</th>
+            <td>1000</td>
+        </tfoot>
     </table>
 
     <!-- Hierarquia tabelas grandes
