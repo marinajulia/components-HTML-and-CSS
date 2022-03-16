@@ -26,6 +26,7 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         td, th{
             border:1px solid black;
@@ -34,6 +35,12 @@
         thead{
             background-color: gray;
             color: white;
+        }
+        /* para colocar a thread colada no topo:(table deve estar com position relative */
+        thead > tr > th{ 
+            position:sticky;
+            top: -1px;
+            background-color:gray;
         }
         caption{
             font-size: 1.5em;
@@ -49,12 +56,12 @@
 </head>
 
 <body>
-    <h1>Tabela genérica:</h1>
+    <!-- <h1>Tabela genérica:</h1> -->
     <!-- Hieraquia de tabela simples:
     TABLE ROW = linha da tabela
     TABLE HEADER = cabeçalho da tabela
     TABLE DATA = dado da tabela -->
-    <table id="simples">
+    <!-- <table id="simples">
         <tr id="simples">
             <td id="simples">A1</td>
             <td id="simples">B1</td>
@@ -75,7 +82,7 @@
             <td id="simples">B4</td>
             <td id="simples">C4</td>
         </tr>
-    </table>
+    </table> -->
 
     <!-- Hierarquia tabelas grandes
         CAPTION
@@ -104,6 +111,70 @@
             </tr>
             <tr>
                 <td>Rio de Janeiro</td>
+                <td>123.123.123</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td>123.123.123</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td>123.123.123</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td>123.123.123</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td>123.123.123</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td>123.123.123</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td>123.123.123</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td>123.123.123</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td>123.123.123</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td>123.123.123</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td>123.123.123</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td>123.123.123</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td>123.123.123</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td>123.123.123</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td>123.123.123</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td>123.123.123</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
                 <td>123.123.123</td>
             </tr>
             <tr>
