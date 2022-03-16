@@ -23,34 +23,45 @@
             text-align: center;
             vertical-align: middle;
         }
-        table{
+
+        table {
             width: 500px;
             border-collapse: collapse;
             position: relative;
         }
-        td, th{
-            border:1px solid black;
+
+        td,
+        th {
+            border: 1px solid black;
             padding: 10px;
         }
-        thead{
+
+        thead {
             background-color: gray;
             color: white;
         }
+
         /* para colocar a thread colada no topo:(table deve estar com position relative */
-        thead > tr > th{ 
-            position:sticky;
+        thead>tr>th {
+            position: sticky;
             top: -1px;
-            background-color:gray;
+            background-color: gray;
         }
-        caption{
+
+        caption {
             font-size: 1.5em;
             font-weight: bold;
             padding: 10px;
             background-color: lightslategray;
         }
+
         /* ou colocar odd ou even em vez de 2n(ou 2n-1) */
-        tbody > tr:nth-child(2n){
+        tbody>tr:nth-child(2n) {
             background-color: lightslategray;
+        }
+
+        div#container {
+            overflow-x: auto;
         }
     </style>
 </head>
@@ -61,35 +72,36 @@
     TABLE ROW = linha da tabela
     TABLE HEADER = cabeçalho da tabela
     TABLE DATA = dado da tabela -->
-    <table id="simples">
-        <thead>
-            <th scope="col">Nome1</th>
-            <th scope="col" >Nome2</th>
-            <th scope="col">Nome3</th>
-        </thead>
-        <tr id="simples">
-            <td id="simples">A1</td>
-            <td scope="colgroup" id="simples" colspan="2">B1</td>
-        </tr>
-        <tr id="simples">
-            <td id="simples" rowspan="3" scope="rowgroup">A2</td>
-            <td id="simples">B2</td>
-            <td id="simples">C2</td>
-        </tr>
-        <tr id="simples">
-            <td id="simples">B3</td>
-            <td id="simples">C3</td>
-        </tr>
-        <tr id="simples">
-            <td id="simples">B4</td>
-            <td id="simples">C4</td>
-        </tr>
-        <tfoot>
-            <th colspan="2" scope="row">Total</th>
-            <td>1000</td>
-        </tfoot>
-    </table>
-
+    <div id="container">
+        <table id="simples">
+            <thead>
+                <th scope="col">Nome1</th>
+                <th scope="col">Nome2</th>
+                <th scope="col">Nome3</th>
+            </thead>
+            <tr id="simples">
+                <td id="simples">A1</td>
+                <td scope="colgroup" id="simples" colspan="2">B1</td>
+            </tr>
+            <tr id="simples">
+                <td id="simples" rowspan="3" scope="rowgroup">A2</td>
+                <td id="simples">B2</td>
+                <td id="simples">C2</td>
+            </tr>
+            <tr id="simples">
+                <td id="simples">B3</td>
+                <td id="simples">C3</td>
+            </tr>
+            <tr id="simples">
+                <td id="simples">B4</td>
+                <td id="simples">C4</td>
+            </tr>
+            <tfoot>
+                <th colspan="2" scope="row">Total</th>
+                <td>1000</td>
+            </tfoot>
+        </table>
+    </div>
     <!-- Hierarquia tabelas grandes
         CAPTION
         THEAD -> tr, td, th
@@ -99,104 +111,118 @@
     <br />
     <br />
     <h1>Tabela genérica composta:</h1>
-    <table>
-        <caption>População das unidades federativas</caption>
-        <thead>
-            <th scope="col">Estado</th>
-            <th scope="col">População</th>
-        </thead>
+    <div id="container">
+        <table>
+            <caption>População das unidades federativas</caption>
+            <thead>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+            </thead>
 
-        <tbody>
-            <tr>
-                <td>São Paulo</td>
-                <td>123.123.123</td>
-            </tr>
-            <tr>
-                <td>Minas Gerais</td>
-                <td>123.123.123</td>
-            </tr>
-            <tr>
-                <td>Rio de Janeiro</td>
-                <td>123.123.123</td>
-            </tr>
-            <tr>
-                <td>Ceará</td>
-                <td>123.123.123</td>
-            </tr>
-            <tr>
-                <td>Ceará</td>
-                <td>123.123.123</td>
-            </tr>
-            <tr>
-                <td>Ceará</td>
-                <td>123.123.123</td>
-            </tr>
-            <tr>
-                <td>Ceará</td>
-                <td>123.123.123</td>
-            </tr>
-            <tr>
-                <td>Ceará</td>
-                <td>123.123.123</td>
-            </tr>
-            <tr>
-                <td>Ceará</td>
-                <td>123.123.123</td>
-            </tr>
-            <tr>
-                <td>Ceará</td>
-                <td>123.123.123</td>
-            </tr>
-            <tr>
-                <td>Ceará</td>
-                <td>123.123.123</td>
-            </tr>
-            <tr>
-                <td>Ceará</td>
-                <td>123.123.123</td>
-            </tr>
-            <tr>
-                <td>Ceará</td>
-                <td>123.123.123</td>
-            </tr>
-            <tr>
-                <td>Ceará</td>
-                <td>123.123.123</td>
-            </tr>
-            <tr>
-                <td>Ceará</td>
-                <td>123.123.123</td>
-            </tr>
-            <tr>
-                <td>Ceará</td>
-                <td>123.123.123</td>
-            </tr>
-            <tr>
-                <td>Ceará</td>
-                <td>123.123.123</td>
-            </tr>
-            <tr>
-                <td>Ceará</td>
-                <td>123.123.123</td>
-            </tr>
-            <tr>
-                <td>Ceará</td>
-                <td>123.123.123</td>
-            </tr>
-            <tr>
-                <td>Ceará</td>
-                <td>123.123.123</td>
-            </tr>
-        </tbody>
+            <tbody>
+                <tr>
+                    <td>São Paulo</td>
+                    <td>123.123.123</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td>123.123.123</td>
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td>123.123.123</td>
+                </tr>
+                <tr>
+                    <td>Ceará</td>
+                    <td>123.123.123</td>
+                </tr>
+                <tr>
+                    <td>Ceará</td>
+                    <td>123.123.123</td>
+                </tr>
+                <tr>
+                    <td>Ceará</td>
+                    <td>123.123.123</td>
+                </tr>
+                <tr>
+                    <td>Ceará</td>
+                    <td>123.123.123</td>
+                </tr>
+                <tr>
+                    <td>Ceará</td>
+                    <td>123.123.123</td>
+                </tr>
+                <tr>
+                    <td>Ceará</td>
+                    <td>123.123.123</td>
+                </tr>
+                <tr>
+                    <td>Ceará</td>
+                    <td>123.123.123</td>
+                </tr>
+                <tr>
+                    <td>Ceará</td>
+                    <td>123.123.123</td>
+                </tr>
+                <tr>
+                    <td>Ceará</td>
+                    <td>123.123.123</td>
+                </tr>
+                <tr>
+                    <td>Ceará</td>
+                    <td>123.123.123</td>
+                </tr>
+                <tr>
+                    <td>Ceará</td>
+                    <td>123.123.123</td>
+                </tr>
+                <tr>
+                    <td>Ceará</td>
+                    <td>123.123.123</td>
+                </tr>
+                <tr>
+                    <td>Ceará</td>
+                    <td>123.123.123</td>
+                </tr>
+                <tr>
+                    <td>Ceará</td>
+                    <td>123.123.123</td>
+                </tr>
+                <tr>
+                    <td>Ceará</td>
+                    <td>123.123.123</td>
+                </tr>
+                <tr>
+                    <td>Ceará</td>
+                    <td>123.123.123</td>
+                </tr>
+                <tr>
+                    <td>Ceará</td>
+                    <td>123.123.123</td>
+                </tr>
+            </tbody>
 
-        <tfoot>
-            <tr>
-                <th scope="row">Total de Habitantes</th>
-                <td>434.324.321</td>
-            </tr>
-        </tfoot>
-    </table>
-
+            <tfoot>
+                <tr>
+                    <th scope="row">Total de Habitantes</th>
+                    <td>434.324.321</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <p><p>Lorem ipsum dolor sit amet. Et amet alias vel natus numquam ex reiciendis reprehenderit. Qui quisquam nisi nam autem natus et quia quod nam cupiditate Quis ut dolorem iusto eos eveniet eaque. Ea velit officiis non voluptates magnam  natus laudantium eos perspiciatis sequi. Vel impedit dolore  mollitia voluptas ut nesciunt magni est provident quisquam. </p><p>Ut impedit fugiat At atque nostrum et quia dignissimos. Est sunt maxime vel aliquam fugit ea adipisci natus. Et asperiores laboriosam sed quia optio ex minus quidem aut impedit nihil ut molestiae asperiores quo quod excepturi vel odio aliquam. </p><p>Ut nesciunt officiis sed corrupti beatae  illo vero et facere magni aut doloremque tenetur eum nemo labore eos excepturi libero. Rem sunt libero non voluptas odio et labore galisum et optio sint. Et consequatur corporis eos quia architecto sed distinctio consequatur ea itaque aperiam id rerum distinctio qui neque dignissimos? Sit possimus molestiae ab quisquam voluptatem hic fugit numquam aut corporis nulla. </p>
+    <p>Lorem ipsum dolor sit amet. Et amet alias vel natus numquam ex reiciendis reprehenderit. Qui quisquam nisi nam autem natus et quia quod nam cupiditate Quis ut dolorem iusto eos eveniet eaque. Ea velit officiis non voluptates magnam  natus laudantium eos perspiciatis sequi. Vel impedit dolore  mollitia voluptas ut nesciunt magni est provident quisquam. </p><p>Ut impedit fugiat At atque nostrum et quia dignissimos. Est sunt maxime vel aliquam fugit ea adipisci natus. Et asperiores laboriosam sed quia optio ex minus quidem aut impedit nihil ut molestiae asperiores quo quod excepturi vel odio aliquam. </p><p>Ut nesciunt officiis sed corrupti beatae  illo vero et facere magni aut doloremque tenetur eum nemo labore eos excepturi libero. Rem sunt libero non voluptas odio et labore galisum et optio sint. Et consequatur corporis eos quia architecto sed distinctio consequatur ea itaque aperiam id rerum distinctio qui neque dignissimos? Sit possimus molestiae ab quisquam voluptatem hic fugit numquam aut corporis nulla. </p>
+    <p>Lorem ipsum dolor sit amet. Et amet alias vel natus numquam ex reiciendis reprehenderit. Qui quisquam nisi nam autem natus et quia quod nam cupiditate Quis ut dolorem iusto eos eveniet eaque. Ea velit officiis non voluptates magnam  natus laudantium eos perspiciatis sequi. Vel impedit dolore  mollitia voluptas ut nesciunt magni est provident quisquam. </p><p>Ut impedit fugiat At atque nostrum et quia dignissimos. Est sunt maxime vel aliquam fugit ea adipisci natus. Et asperiores laboriosam sed quia optio ex minus quidem aut impedit nihil ut molestiae asperiores quo quod excepturi vel odio aliquam. </p><p>Ut nesciunt officiis sed corrupti beatae  illo vero et facere magni aut doloremque tenetur eum nemo labore eos excepturi libero. Rem sunt libero non voluptas odio et labore galisum et optio sint. Et consequatur corporis eos quia architecto sed distinctio consequatur ea itaque aperiam id rerum distinctio qui neque dignissimos? Sit possimus molestiae ab quisquam voluptatem hic fugit numquam aut corporis nulla. </p>
+    <p>Lorem ipsum dolor sit amet. Et amet alias vel natus numquam ex reiciendis reprehenderit. Qui quisquam nisi nam autem natus et quia quod nam cupiditate Quis ut dolorem iusto eos eveniet eaque. Ea velit officiis non voluptates magnam  natus laudantium eos perspiciatis sequi. Vel impedit dolore  mollitia voluptas ut nesciunt magni est provident quisquam. </p><p>Ut impedit fugiat At atque nostrum et quia dignissimos. Est sunt maxime vel aliquam fugit ea adipisci natus. Et asperiores laboriosam sed quia optio ex minus quidem aut impedit nihil ut molestiae asperiores quo quod excepturi vel odio aliquam. </p><p>Ut nesciunt officiis sed corrupti beatae  illo vero et facere magni aut doloremque tenetur eum nemo labore eos excepturi libero. Rem sunt libero non voluptas odio et labore galisum et optio sint. Et consequatur corporis eos quia architecto sed distinctio consequatur ea itaque aperiam id rerum distinctio qui neque dignissimos? Sit possimus molestiae ab quisquam voluptatem hic fugit numquam aut corporis nulla. </p>
+    <p>Lorem ipsum dolor sit amet. Et amet alias vel natus numquam ex reiciendis reprehenderit. Qui quisquam nisi nam autem natus et quia quod nam cupiditate Quis ut dolorem iusto eos eveniet eaque. Ea velit officiis non voluptates magnam  natus laudantium eos perspiciatis sequi. Vel impedit dolore  mollitia voluptas ut nesciunt magni est provident quisquam. </p><p>Ut impedit fugiat At atque nostrum et quia dignissimos. Est sunt maxime vel aliquam fugit ea adipisci natus. Et asperiores laboriosam sed quia optio ex minus quidem aut impedit nihil ut molestiae asperiores quo quod excepturi vel odio aliquam. </p><p>Ut nesciunt officiis sed corrupti beatae  illo vero et facere magni aut doloremque tenetur eum nemo labore eos excepturi libero. Rem sunt libero non voluptas odio et labore galisum et optio sint. Et consequatur corporis eos quia architecto sed distinctio consequatur ea itaque aperiam id rerum distinctio qui neque dignissimos? Sit possimus molestiae ab quisquam voluptatem hic fugit numquam aut corporis nulla. </p>
+    <p>Lorem ipsum dolor sit amet. Et amet alias vel natus numquam ex reiciendis reprehenderit. Qui quisquam nisi nam autem natus et quia quod nam cupiditate Quis ut dolorem iusto eos eveniet eaque. Ea velit officiis non voluptates magnam  natus laudantium eos perspiciatis sequi. Vel impedit dolore  mollitia voluptas ut nesciunt magni est provident quisquam. </p><p>Ut impedit fugiat At atque nostrum et quia dignissimos. Est sunt maxime vel aliquam fugit ea adipisci natus. Et asperiores laboriosam sed quia optio ex minus quidem aut impedit nihil ut molestiae asperiores quo quod excepturi vel odio aliquam. </p><p>Ut nesciunt officiis sed corrupti beatae  illo vero et facere magni aut doloremque tenetur eum nemo labore eos excepturi libero. Rem sunt libero non voluptas odio et labore galisum et optio sint. Et consequatur corporis eos quia architecto sed distinctio consequatur ea itaque aperiam id rerum distinctio qui neque dignissimos? Sit possimus molestiae ab quisquam voluptatem hic fugit numquam aut corporis nulla. </p>
+    <p>Lorem ipsum dolor sit amet. Et amet alias vel natus numquam ex reiciendis reprehenderit. Qui quisquam nisi nam autem natus et quia quod nam cupiditate Quis ut dolorem iusto eos eveniet eaque. Ea velit officiis non voluptates magnam  natus laudantium eos perspiciatis sequi. Vel impedit dolore  mollitia voluptas ut nesciunt magni est provident quisquam. </p><p>Ut impedit fugiat At atque nostrum et quia dignissimos. Est sunt maxime vel aliquam fugit ea adipisci natus. Et asperiores laboriosam sed quia optio ex minus quidem aut impedit nihil ut molestiae asperiores quo quod excepturi vel odio aliquam. </p><p>Ut nesciunt officiis sed corrupti beatae  illo vero et facere magni aut doloremque tenetur eum nemo labore eos excepturi libero. Rem sunt libero non voluptas odio et labore galisum et optio sint. Et consequatur corporis eos quia architecto sed distinctio consequatur ea itaque aperiam id rerum distinctio qui neque dignissimos? Sit possimus molestiae ab quisquam voluptatem hic fugit numquam aut corporis nulla. </p>
+    <p>Lorem ipsum dolor sit amet. Et amet alias vel natus numquam ex reiciendis reprehenderit. Qui quisquam nisi nam autem natus et quia quod nam cupiditate Quis ut dolorem iusto eos eveniet eaque. Ea velit officiis non voluptates magnam  natus laudantium eos perspiciatis sequi. Vel impedit dolore  mollitia voluptas ut nesciunt magni est provident quisquam. </p><p>Ut impedit fugiat At atque nostrum et quia dignissimos. Est sunt maxime vel aliquam fugit ea adipisci natus. Et asperiores laboriosam sed quia optio ex minus quidem aut impedit nihil ut molestiae asperiores quo quod excepturi vel odio aliquam. </p><p>Ut nesciunt officiis sed corrupti beatae  illo vero et facere magni aut doloremque tenetur eum nemo labore eos excepturi libero. Rem sunt libero non voluptas odio et labore galisum et optio sint. Et consequatur corporis eos quia architecto sed distinctio consequatur ea itaque aperiam id rerum distinctio qui neque dignissimos? Sit possimus molestiae ab quisquam voluptatem hic fugit numquam aut corporis nulla. </p>
+    <p>Lorem ipsum dolor sit amet. Et amet alias vel natus numquam ex reiciendis reprehenderit. Qui quisquam nisi nam autem natus et quia quod nam cupiditate Quis ut dolorem iusto eos eveniet eaque. Ea velit officiis non voluptates magnam  natus laudantium eos perspiciatis sequi. Vel impedit dolore  mollitia voluptas ut nesciunt magni est provident quisquam. </p><p>Ut impedit fugiat At atque nostrum et quia dignissimos. Est sunt maxime vel aliquam fugit ea adipisci natus. Et asperiores laboriosam sed quia optio ex minus quidem aut impedit nihil ut molestiae asperiores quo quod excepturi vel odio aliquam. </p><p>Ut nesciunt officiis sed corrupti beatae  illo vero et facere magni aut doloremque tenetur eum nemo labore eos excepturi libero. Rem sunt libero non voluptas odio et labore galisum et optio sint. Et consequatur corporis eos quia architecto sed distinctio consequatur ea itaque aperiam id rerum distinctio qui neque dignissimos? Sit possimus molestiae ab quisquam voluptatem hic fugit numquam aut corporis nulla. </p>
+    <p>Lorem ipsum dolor sit amet. Et amet alias vel natus numquam ex reiciendis reprehenderit. Qui quisquam nisi nam autem natus et quia quod nam cupiditate Quis ut dolorem iusto eos eveniet eaque. Ea velit officiis non voluptates magnam  natus laudantium eos perspiciatis sequi. Vel impedit dolore  mollitia voluptas ut nesciunt magni est provident quisquam. </p><p>Ut impedit fugiat At atque nostrum et quia dignissimos. Est sunt maxime vel aliquam fugit ea adipisci natus. Et asperiores laboriosam sed quia optio ex minus quidem aut impedit nihil ut molestiae asperiores quo quod excepturi vel odio aliquam. </p><p>Ut nesciunt officiis sed corrupti beatae  illo vero et facere magni aut doloremque tenetur eum nemo labore eos excepturi libero. Rem sunt libero non voluptas odio et labore galisum et optio sint. Et consequatur corporis eos quia architecto sed distinctio consequatur ea itaque aperiam id rerum distinctio qui neque dignissimos? Sit possimus molestiae ab quisquam voluptatem hic fugit numquam aut corporis nulla. </p>
+    <p>Lorem ipsum dolor sit amet. Et amet alias vel natus numquam ex reiciendis reprehenderit. Qui quisquam nisi nam autem natus et quia quod nam cupiditate Quis ut dolorem iusto eos eveniet eaque. Ea velit officiis non voluptates magnam  natus laudantium eos perspiciatis sequi. Vel impedit dolore  mollitia voluptas ut nesciunt magni est provident quisquam. </p><p>Ut impedit fugiat At atque nostrum et quia dignissimos. Est sunt maxime vel aliquam fugit ea adipisci natus. Et asperiores laboriosam sed quia optio ex minus quidem aut impedit nihil ut molestiae asperiores quo quod excepturi vel odio aliquam. </p><p>Ut nesciunt officiis sed corrupti beatae  illo vero et facere magni aut doloremque tenetur eum nemo labore eos excepturi libero. Rem sunt libero non voluptas odio et labore galisum et optio sint. Et consequatur corporis eos quia architecto sed distinctio consequatur ea itaque aperiam id rerum distinctio qui neque dignissimos? Sit possimus molestiae ab quisquam voluptatem hic fugit numquam aut corporis nulla. </p>
+    <p>Lorem ipsum dolor sit amet. Et amet alias vel natus numquam ex reiciendis reprehenderit. Qui quisquam nisi nam autem natus et quia quod nam cupiditate Quis ut dolorem iusto eos eveniet eaque. Ea velit officiis non voluptates magnam  natus laudantium eos perspiciatis sequi. Vel impedit dolore  mollitia voluptas ut nesciunt magni est provident quisquam. </p><p>Ut impedit fugiat At atque nostrum et quia dignissimos. Est sunt maxime vel aliquam fugit ea adipisci natus. Et asperiores laboriosam sed quia optio ex minus quidem aut impedit nihil ut molestiae asperiores quo quod excepturi vel odio aliquam. </p><p>Ut nesciunt officiis sed corrupti beatae  illo vero et facere magni aut doloremque tenetur eum nemo labore eos excepturi libero. Rem sunt libero non voluptas odio et labore galisum et optio sint. Et consequatur corporis eos quia architecto sed distinctio consequatur ea itaque aperiam id rerum distinctio qui neque dignissimos? Sit possimus molestiae ab quisquam voluptatem hic fugit numquam aut corporis nulla. </p>
+</p>
 </body>
 
 </html>
