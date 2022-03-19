@@ -1,6 +1,6 @@
 var nome = '';
 
-if(typeof localStorage.nome == 'undefined'){
+if (typeof localStorage.nome == 'undefined') {
     localStorage.nome = prompt("Digite seu nome");
 }
 
@@ -27,23 +27,40 @@ console.log("Pessoa nova com spreads: ", novaPessoa);
 
 //rest operator:
 
-function minhaLista(...nomes){
-console.log("Com rest: ", nomes);
+function minhaLista(...nomes) {
+    console.log("Com rest: ", nomes);
 }
 minhaLista("Matheus", "Lucas", "Joao");
 
 //
- function cadastrar(usuarios, ...novosUsuarios){
-    let totalUsuarios = [ ...usuarios, ...novosUsuarios];
+function cadastrar(usuarios, ...novosUsuarios) {
+    let totalUsuarios = [...usuarios, ...novosUsuarios];
     console.log("Rest com spread de usuarios: ", totalUsuarios)
- }
- let usuarios = ["Matheus", "João"];
- let novosUsuarios = cadastrar(usuarios, "Henrique", "Lucas");
+}
+let usuarios = ["Matheus", "João"];
+let novosUsuarios = cadastrar(usuarios, "Henrique", "Lucas");
 
 // map: serve para percorrer todos os items desse array e retornar alguma coisa que queremos fazer
- const lista = [1,2,3,4,5,6];
+//o index do map é opcional e serve para mostrar a posição que o elemento do array está
+const lista = [1, 2, 3, 4, 5, 6];
 
- const novaLista = lista.map(function(item){
- return item;
- });
- console.log("lista usando map: ", novaLista);
+const novaLista = lista.map(function (item, index) {
+    return item;
+});
+console.log("lista usando map: ", novaLista);
+
+//reduce: Somar todos os items da lista de uma maneira mais simples
+
+const soma = lista.reduce(function (total, proximoItem) {
+    return total + proximoItem;
+});
+
+console.log("Reduce da lista: ", soma);
+
+//find: achar algum item da lista
+
+const find = lista.find(function(item){
+    return item === 6 
+})
+
+console.log("find: ", find)
