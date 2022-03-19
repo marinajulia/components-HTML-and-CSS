@@ -63,4 +63,12 @@ const find = lista.find(function(item){
     return item === 6 
 })
 
-console.log("find: ", find)
+console.log("find: ", find);
+
+//refatorando:
+
+function adicionar(...numeros){
+    let total = numeros.reduce((total, proximo) => total + proximo);
+    console.log(total);
+}
+adicionar(1,2,3,4,5,6);
