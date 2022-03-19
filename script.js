@@ -15,7 +15,7 @@ let pessoa = {
     idade: 34,
     cargo: "Programador"
 }
-console.log("pessoa: ", pessoa);
+console.log("pessoa com spread: ", pessoa);
 
 let novaPessoa = {
     ...pessoa,
@@ -23,4 +23,11 @@ let novaPessoa = {
     cidade: "Franca"
 }
 
-console.log("Pessoa nova: ", novaPessoa);
+console.log("Pessoa nova com spreads: ", novaPessoa);
+
+//rest operator:
+
+function minhaLista(...nomes){
+console.log("Com rest: ", nomes);
+}
+minhaLista("Matheus", "Lucas", "Joao");
