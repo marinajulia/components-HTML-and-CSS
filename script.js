@@ -31,3 +31,19 @@ function minhaLista(...nomes){
 console.log("Com rest: ", nomes);
 }
 minhaLista("Matheus", "Lucas", "Joao");
+
+//
+ function cadastrar(usuarios, ...novosUsuarios){
+    let totalUsuarios = [ ...usuarios, ...novosUsuarios];
+    console.log("Rest com spread de usuarios: ", totalUsuarios)
+ }
+ let usuarios = ["Matheus", "João"];
+ let novosUsuarios = cadastrar(usuarios, "Henrique", "Lucas");
+
+// map: serve para percorrer todos os items desse array e retornar alguma coisa que queremos fazer
+ const lista = [1,2,3,4,5,6];
+
+ const novaLista = lista.map(function(item){
+ return item;
+ });
+ console.log("lista usando map: ", novaLista);
